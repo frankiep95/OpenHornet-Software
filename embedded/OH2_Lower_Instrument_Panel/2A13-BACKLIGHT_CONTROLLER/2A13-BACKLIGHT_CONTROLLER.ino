@@ -229,16 +229,16 @@ const int VOLTAGE = 5;
 const int MAX_MILLIAMPS = 20000;
 
 // Hardware pin definitions
-const int encSw =    24;              
-const int encA  =    22;              
+const int encSw =    22;              
+const int encA  =    24;              
 const int encB  =    23;  
 
 // LED counts for each channel
-const int LIP_1_LED_COUNT = 100;
-const int LIP_2_LED_COUNT = 120;
-const int UIP_1_LED_COUNT = 210;
-const int UIP_2_LED_COUNT = 210;
-const int LC_1_LED_COUNT = 250;
+const int LIP_1_LED_COUNT = 95;
+const int LIP_2_LED_COUNT = 111;
+const int UIP_1_LED_COUNT = 191;
+// const int UIP_2_LED_COUNT = 210;
+const int LC_1_LED_COUNT = 230;
 const int LC_2_LED_COUNT = 215;
 const int RC_1_LED_COUNT = 171;
 const int RC_2_LED_COUNT = 266;
@@ -249,7 +249,7 @@ const int RC_FLOOD_LED_COUNT = 100;
 CRGB LIP_1_leds[LIP_1_LED_COUNT];    
 CRGB LIP_2_leds[LIP_2_LED_COUNT];    
 CRGB UIP_1_leds[UIP_1_LED_COUNT];    
-CRGB UIP_2_leds[UIP_2_LED_COUNT];    
+// CRGB UIP_2_leds[UIP_2_LED_COUNT];    
 CRGB LC_1_leds[LC_1_LED_COUNT];     
 CRGB LC_2_leds[LC_2_LED_COUNT];     
 CRGB RC_1_leds[RC_1_LED_COUNT];     
@@ -261,7 +261,7 @@ CRGB RC_FLOOD_leds[RC_FLOOD_LED_COUNT];    // 100 LEDs
 Channel LIP_1(13, "Channel 1", LIP_1_leds, LIP_1_LED_COUNT);
 Channel LIP_2(12, "Channel 2", LIP_2_leds, LIP_2_LED_COUNT);
 Channel UIP_1(11, "Channel 3", UIP_1_leds, UIP_1_LED_COUNT);
-Channel UIP_2(10, "Channel 4", UIP_2_leds, UIP_2_LED_COUNT);                                   
+// Channel UIP_2(10, "Channel 4", UIP_2_leds, UIP_2_LED_COUNT);                                   
 Channel LC_1(9, "Channel 5", LC_1_leds, LC_1_LED_COUNT);                                      
 Channel LC_2(8, "Channel 6", LC_2_leds, LC_2_LED_COUNT);
 Channel RC_1(7, "Channel 7", RC_1_leds, RC_1_LED_COUNT);               
@@ -286,7 +286,7 @@ void setup() {
     LIP_1.initialize();                                               // Calling .initialize() on a channel object will
     LIP_2.initialize();                                               // trigger FastLED.addLeds() with pin and led count
     UIP_1.initialize();                                               
-    UIP_2.initialize();                                               
+    // UIP_2.initialize();                                               
     LC_1.initialize();
     LC_2.initialize();
     RC_1.initialize();
@@ -297,7 +297,7 @@ void setup() {
     board->registerChannel(&LIP_1);                                   // Register channels with the board, so they are
     board->registerChannel(&LIP_2);                                   // accessible by the board object
     board->registerChannel(&UIP_1);
-    board->registerChannel(&UIP_2);
+    // board->registerChannel(&UIP_2);
     board->registerChannel(&LC_1);
     board->registerChannel(&LC_2);
     board->registerChannel(&RC_1);
@@ -307,8 +307,8 @@ void setup() {
 
     UIP_1.addPanel<MasterArmPanel>();                                 // Instantiate the panels;
     UIP_1.addPanel<EwiPanel>();                                       // Adapt order according to your physical wiring; 
-    //UIP_1.addPanel<HudPanel>();                                     // Do not exceed the channel's LED count defined above.
-    //UIP_1.addPanel<HudPanelRev3>();
+    // UIP_1.addPanel<HudPanel>();                                     // Do not exceed the channel's LED count defined above.
+    UIP_1.addPanel<HudPanelRev3>();
     UIP_1.addPanel<REwiPanel>();
     UIP_1.addPanel<SpnRcvyPanel>();
 
@@ -319,7 +319,7 @@ void setup() {
 
     LIP_2.addPanel<EcmPanel>();
     LIP_2.addPanel<RwrControlPanel>();
-    LIP_2.addPanel<StandbyInstrumentPanel>();
+    // LIP_2.addPanel<StandbyInstrumentPanel>();
 
     LC_1.addPanel<LdgGearPanel>();
     LC_1.addPanel<SelectJettPanel>();
@@ -331,15 +331,15 @@ void setup() {
     
     LC_2.addPanel<Lc2AllPanels>();
 
-    RC_1.addPanel<LdgChecklistPanel>();
-    RC_1.addPanel<RadarAltPanel>();
-    RC_1.addPanel<HydPressGauge>();
-    RC_1.addPanel<CautionPanel>();
-    RC_1.addPanel<Rc1AllRemainingPanels>();
-    RC_2.addPanel<Rc2AllPanels>();
+    // RC_1.addPanel<LdgChecklistPanel>();
+    // RC_1.addPanel<RadarAltPanel>();
+    // RC_1.addPanel<HydPressGauge>();
+    // RC_1.addPanel<CautionPanel>();
+    // RC_1.addPanel<Rc1AllRemainingPanels>();
+    // RC_2.addPanel<Rc2AllPanels>();
 
-    LC_FLOOD.addPanel<LcFloodLights>();
-    RC_FLOOD.addPanel<RcFloodLights>();
+    // LC_FLOOD.addPanel<LcFloodLights>();
+    // RC_FLOOD.addPanel<RcFloodLights>();
 
     FastLED.setMaxPowerInVoltsAndMilliamps(VOLTAGE, MAX_MILLIAMPS);   // Set the maximum power in volts and milliamps
     FastLED.setMaxRefreshRate(100);                                   // Set the maximum refresh rate to 100 Hz instead of std. 400 Hz. Slightly reduces CPU load.

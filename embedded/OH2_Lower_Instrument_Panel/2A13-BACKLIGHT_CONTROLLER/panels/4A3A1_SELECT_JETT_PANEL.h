@@ -28,7 +28,7 @@
  * @details "Role" in this context refers to the LED role enum in the Panel.h file (enum used for memory efficiency).
  * @remark  This table is stored in PROGMEM for memory efficiency.
  ********************************************************************************************************************/
-const int SELECT_JETT_LED_COUNT = 81;  // Total number of LEDs in the panel
+const int SELECT_JETT_LED_COUNT = 77;  // Total number of LEDs in the panel
 const Led selectJettLedTable[SELECT_JETT_LED_COUNT] PROGMEM = {
     {0, LED_INSTR_BL}, {1, LED_INSTR_BL}, {2, LED_INSTR_BL}, {3, LED_INSTR_BL}, {4, LED_INSTR_BL},
     {5, LED_INSTR_BL}, {6, LED_INSTR_BL}, {7, LED_INSTR_BL}, {8, LED_INSTR_BL}, {9, LED_INSTR_BL},
@@ -45,8 +45,7 @@ const Led selectJettLedTable[SELECT_JETT_LED_COUNT] PROGMEM = {
     {60, LED_INSTR_BL}, {61, LED_INSTR_BL}, {62, LED_INSTR_BL}, {63, LED_INSTR_BL}, {64, LED_INSTR_BL},
     {65, LED_INSTR_BL}, {66, LED_INSTR_BL}, {67, LED_INSTR_BL}, {68, LED_INSTR_BL}, {69, LED_INSTR_BL},
     {70, LED_INSTR_BL}, {71, LED_INSTR_BL}, {72, LED_INSTR_BL}, {73, LED_INSTR_BL}, {74, LED_INSTR_BL},
-    {75, LED_INSTR_BL}, {76, LED_INSTR_BL}, {77, LED_INSTR_BL}, {78, LED_INSTR_BL}, {79, LED_INSTR_BL},
-    {80, LED_INSTR_BL}
+    {75, LED_INSTR_BL}, {76, LED_INSTR_BL}
 };
 
 /********************************************************************************************************************

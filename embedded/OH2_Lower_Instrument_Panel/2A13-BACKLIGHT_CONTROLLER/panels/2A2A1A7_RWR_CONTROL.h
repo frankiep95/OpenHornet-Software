@@ -34,7 +34,7 @@
  * @remark  This table is stored in PROGMEM for memory efficiency.
  * @see     LedRole.h for the list of LED roles and LedStruct.h for the Led structure.
  ********************************************************************************************************************/
-const int RWR_CONTROL_LED_COUNT = 32;  // Total number of LEDs in the panel
+const int RWR_CONTROL_LED_COUNT = 33;  // Total number of LEDs in the panel
 const Led rwrControlLedTable[RWR_CONTROL_LED_COUNT] PROGMEM = {
     {0, LED_INSTR_BL}, {1, LED_INSTR_BL}, {2, LED_INSTR_BL}, {3, LED_INSTR_BL},
     {4, LED_INSTR_BL}, {5, LED_INSTR_BL}, {6, LED_RWR_BIT}, {7, LED_RWR_BIT_FAIL},
@@ -43,7 +43,7 @@ const Led rwrControlLedTable[RWR_CONTROL_LED_COUNT] PROGMEM = {
     {16, LED_RWR_SPECIAL_EN}, {17, LED_RWR_SPECIAL}, {18, LED_RWR_DISPLAY}, {19, LED_RWR_LIMIT},
     {20, LED_RWR_LIMIT}, {21, LED_RWR_DISPLAY}, {22, LED_RWR_POWER}, {23, LED_RWR_POWER},
     {24, LED_RWR_NONE}, {25, LED_RWR_NONE}, {26, LED_INSTR_BL}, {27, LED_INSTR_BL},
-    {28, LED_INSTR_BL}, {29, LED_INSTR_BL}, {30, LED_INSTR_BL}, {31, LED_INSTR_BL}
+    {28, LED_INSTR_BL}, {29, LED_INSTR_BL}, {30, LED_INSTR_BL}, {31, LED_INSTR_BL}, {32, LED_INSTR_BL}
 };
 
 /********************************************************************************************************************

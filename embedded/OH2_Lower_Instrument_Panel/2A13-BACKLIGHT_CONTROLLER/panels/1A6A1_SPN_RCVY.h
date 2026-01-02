@@ -34,7 +34,7 @@
  * @remark  This table is stored in PROGMEM for memory efficiency.
  * @see     LedRole.h for the list of LED roles and LedStruct.h for the Led structure.
  ********************************************************************************************************************/
-const int SPN_RCVY_LED_COUNT = 63;  // Total number of LEDs in the panel
+const int SPN_RCVY_LED_COUNT = 52;  // Total number of LEDs in the panel
 const Led spnRcvyLedTable[SPN_RCVY_LED_COUNT] PROGMEM = {
     {0, LED_INSTR_BL}, {1, LED_INSTR_BL}, {2, LED_INSTR_BL}, {3, LED_INSTR_BL}, {4, LED_INSTR_BL}, 
     {5, LED_INSTR_BL}, {6, LED_INSTR_BL}, {7, LED_INSTR_BL}, {8, LED_INSTR_BL}, {9, LED_INSTR_BL},
@@ -46,9 +46,7 @@ const Led spnRcvyLedTable[SPN_RCVY_LED_COUNT] PROGMEM = {
     {35, LED_INSTR_BL}, {36, LED_SPIN}, {37, LED_INSTR_BL}, {38, LED_INSTR_BL}, {39, LED_INSTR_BL},
     {40, LED_INSTR_BL}, {41, LED_INSTR_BL}, {42, LED_INSTR_BL}, {43, LED_INSTR_BL}, {44, LED_INSTR_BL}, 
     {45, LED_INSTR_BL}, {46, LED_INSTR_BL}, {47, LED_INSTR_BL}, {48, LED_INSTR_BL}, {49, LED_INSTR_BL},
-    {50, LED_INSTR_BL}, {51, LED_INSTR_BL}, {52, LED_INSTR_BL}, {53, LED_INSTR_BL}, {54, LED_INSTR_BL}, 
-    {55, LED_INSTR_BL}, {56, LED_INSTR_BL}, {57, LED_INSTR_BL}, {58, LED_INSTR_BL}, {59, LED_INSTR_BL},
-    {60, LED_INSTR_BL}, {61, LED_INSTR_BL}, {62, LED_INSTR_BL}
+    {50, LED_INSTR_BL}
 };
 
 /********************************************************************************************************************

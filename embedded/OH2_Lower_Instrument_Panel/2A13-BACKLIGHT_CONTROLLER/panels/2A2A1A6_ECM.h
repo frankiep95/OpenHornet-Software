@@ -33,7 +33,7 @@
  * @remark  This table is stored in PROGMEM for memory efficiency.
  * @see     LedRole.h for the list of LED roles and LedStruct.h for the Led structure.
  ********************************************************************************************************************/
-const int ECM_LED_COUNT = 79;  // Total number of LEDs in the panel
+const int ECM_LED_COUNT = 78;  // Total number of LEDs in the panel
 const Led ecmLedTable[ECM_LED_COUNT] PROGMEM = {
     // Backlight LEDs (0-73)
     {0, LED_INSTR_BL}, {1, LED_INSTR_BL}, {2, LED_INSTR_BL}, {3, LED_INSTR_BL}, {4, LED_INSTR_BL},
