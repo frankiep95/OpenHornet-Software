@@ -316,9 +316,10 @@ void setup() {
     LIP_1.addPanel<VideoRecordPanel>();
     LIP_1.addPanel<JettStationPanel>();
     LIP_1.addPanel<JettPlacardPanel>();
-
-    LIP_2.addPanel<EcmPanel>();
+    
     LIP_2.addPanel<RwrControlPanel>();
+    LIP_2.addPanel<EcmPanel>();
+  
     // LIP_2.addPanel<StandbyInstrumentPanel>();
 
     LC_1.addPanel<LdgGearPanel>();
