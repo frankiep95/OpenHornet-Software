@@ -30,7 +30,7 @@
  * @details "Role" in this context refers to the LED role enum in the Panel.h file (enum used for memory efficiency).
  * @remark  This table is stored in PROGMEM for memory efficiency.
  ********************************************************************************************************************/
-const int LC2_ALL_PANELS_LED_COUNT = 215;  // Total number of LEDs in the panel
+const int LC2_ALL_PANELS_LED_COUNT = 208;  // Total number of LEDs in the panel
 const Led lc2AllPanelsLedTable[LC2_ALL_PANELS_LED_COUNT] PROGMEM = {
     {0, LED_CONSOLE_BL}, {1, LED_CONSOLE_BL}, {2, LED_CONSOLE_BL}, {3, LED_CONSOLE_BL}, {4, LED_CONSOLE_BL}, 
     {5, LED_CONSOLE_BL}, {6, LED_CONSOLE_BL}, {7, LED_CONSOLE_BL}, {8, LED_CONSOLE_BL}, {9, LED_CONSOLE_BL},
@@ -73,8 +73,7 @@ const Led lc2AllPanelsLedTable[LC2_ALL_PANELS_LED_COUNT] PROGMEM = {
     {190, LED_CONSOLE_BL}, {191, LED_CONSOLE_BL}, {192, LED_CONSOLE_BL}, {193, LED_CONSOLE_BL}, {194, LED_CONSOLE_BL}, 
     {195, LED_CONSOLE_BL}, {196, LED_CONSOLE_BL}, {197, LED_CONSOLE_BL}, {198, LED_CONSOLE_BL}, {199, LED_CONSOLE_BL},
     {200, LED_CONSOLE_BL}, {201, LED_CONSOLE_BL}, {202, LED_CONSOLE_BL}, {203, LED_CONSOLE_BL}, {204, LED_CONSOLE_BL}, 
-    {205, LED_CONSOLE_BL}, {206, LED_CONSOLE_BL}, {207, LED_CONSOLE_BL}, {208, LED_CONSOLE_BL}, {209, LED_CONSOLE_BL},
-    {210, LED_CONSOLE_BL}, {211, LED_CONSOLE_BL}, {212, LED_CONSOLE_BL}, {213, LED_CONSOLE_BL}, {214, LED_CONSOLE_BL}
+    {205, LED_CONSOLE_BL}, {206, LED_CONSOLE_BL}, {207, LED_CONSOLE_BL}, {208, LED_CONSOLE_BL}
 };
 
 /********************************************************************************************************************

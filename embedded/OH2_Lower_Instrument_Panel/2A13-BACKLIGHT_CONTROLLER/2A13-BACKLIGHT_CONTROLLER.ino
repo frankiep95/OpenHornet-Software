@@ -235,11 +235,11 @@ const int encB  =    23;
 
 // LED counts for each channel
 const int LIP_1_LED_COUNT = 95;
-const int LIP_2_LED_COUNT = 111;
+const int LIP_2_LED_COUNT = 117;
 const int UIP_1_LED_COUNT = 191;
 // const int UIP_2_LED_COUNT = 210;
 const int LC_1_LED_COUNT = 230;
-const int LC_2_LED_COUNT = 215;
+const int LC_2_LED_COUNT = 208;
 const int RC_1_LED_COUNT = 171;
 const int RC_2_LED_COUNT = 266;
 const int LC_FLOOD_LED_COUNT = 100;
@@ -320,7 +320,7 @@ void setup() {
     LIP_2.addPanel<RwrControlPanel>();
     LIP_2.addPanel<EcmPanel>();
   
-    // LIP_2.addPanel<StandbyInstrumentPanel>();
+    LIP_2.addPanel<StandbyInstrumentPanel>();
 
     LC_1.addPanel<LdgGearPanel>();
     LC_1.addPanel<SelectJettPanel>();
