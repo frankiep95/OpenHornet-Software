@@ -112,11 +112,11 @@ protected:
             if (led.role == LED_INSTR_BL) {
                 getLedStrip()[ledIndex] = target;
             }
-            if(
+            if(led.role == LED_5MM_RGB) {                               // Special handling for 5MM RGB LEDs
                 target = NVIS_RED;
                 target.nscale8_video(scale);
                 getLedStrip()[ledIndex] = target;
-            )
+            }
         }
         LedUpdateState::getInstance()->setUpdateFlag(true);           // Inform that LEDs need to be updated
     }

@@ -73,7 +73,7 @@ const Led lc2AllPanelsLedTable[LC2_ALL_PANELS_LED_COUNT] PROGMEM = {
     {190, LED_CONSOLE_BL}, {191, LED_CONSOLE_BL}, {192, LED_CONSOLE_BL}, {193, LED_CONSOLE_BL}, {194, LED_CONSOLE_BL}, 
     {195, LED_CONSOLE_BL}, {196, LED_CONSOLE_BL}, {197, LED_CONSOLE_BL}, {198, LED_CONSOLE_BL}, {199, LED_CONSOLE_BL},
     {200, LED_CONSOLE_BL}, {201, LED_CONSOLE_BL}, {202, LED_CONSOLE_BL}, {203, LED_CONSOLE_BL}, {204, LED_CONSOLE_BL}, 
-    {205, LED_CONSOLE_BL}, {206, LED_CONSOLE_BL}, {207, LED_CONSOLE_BL}, {208, LED_CONSOLE_BL}
+    {205, LED_CONSOLE_BL}, {206, LED_CONSOLE_BL}, {207, LED_CONSOLE_BL}
 };
 
 /********************************************************************************************************************
