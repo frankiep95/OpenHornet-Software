@@ -110,7 +110,10 @@ enum LedRole {
     LED_JETT_RIGHT,
     LED_JETT_HALF,
     LED_JETT_FULL,
-    LED_JETT_FLAPS
+    LED_JETT_FLAPS,
+    // 5MM LED are RGB instead of GRB 
+    LED_5MM_RGB
+
 };
 
 #endif 

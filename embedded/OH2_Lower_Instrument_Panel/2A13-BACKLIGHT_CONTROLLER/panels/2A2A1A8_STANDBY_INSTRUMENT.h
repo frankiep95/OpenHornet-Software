@@ -37,8 +37,8 @@ const int STANDBY_INSTRUMENT_LED_COUNT = 6;
  * @see     LedRole.h for the list of LED roles and LedStruct.h for the Led structure.
  ********************************************************************************************************************/
 const Led standbyInstrumentLedTable[STANDBY_INSTRUMENT_LED_COUNT] PROGMEM = {
-    {0, LED_INSTR_BL}, {1, LED_INSTR_BL}, {2, LED_INSTR_BL},
-    {3, LED_INSTR_BL}, {4, LED_INSTR_BL}, {5, LED_INSTR_BL}
+    {0, LED_5MM_RGB}, {1, LED_5MM_RGB}, {2, LED_5MM_RGB},
+    {3, LED_5MM_RGB}, {4, LED_5MM_RGB}, {5, LED_5MM_RGB}
 };
 
 /********************************************************************************************************************

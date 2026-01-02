@@ -319,7 +319,6 @@ void setup() {
     
     LIP_2.addPanel<RwrControlPanel>();
     LIP_2.addPanel<EcmPanel>();
-  
     LIP_2.addPanel<StandbyInstrumentPanel>();
 
     LC_1.addPanel<LdgGearPanel>();
