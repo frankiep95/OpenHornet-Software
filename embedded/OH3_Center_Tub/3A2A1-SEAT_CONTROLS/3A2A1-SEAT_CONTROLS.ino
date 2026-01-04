@@ -72,30 +72,20 @@
  * serial interface
  * 
  */
-#if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega2560__)
-#define DCSBIOS_IRQ_SERIAL ///< This enables interrupt-driven serial communication for DCS-BIOS. (Only used with the ATmega328P or ATmega2560 microcontrollers.)
-#else
-#define DCSBIOS_DEFAULT_SERIAL ///< This enables the default serial communication for DCS-BIOS. (Used with all other microcontrollers than the ATmega328P or ATmega2560.)  
-#endif
-
+#define MUXADDRESS 9
+#define DCSBIOS_MUX_SERIAL
+#include "DcsBios.h"
 #ifdef __AVR__
 #include <avr/power.h>
 #endif
 
-/**
- * The Arduino pin that is connected to the
- * RE and DE pins on the RS-485 transceiver.
-*/
-#define TXENABLE_PIN 5 ///< Sets TXENABLE_PIN to Arduino Pin 5
-#define UART1_SELECT ///< Selects UART1 on Arduino for serial communication
 
-#include "DcsBios.h"
 
 // Define pins for DCS-BIOS per interconnect diagram.
- #define SEAT_HARNESS_LOCK A3  ///< Seat Harness Lock - forward position
- #define SEAT_HARNESS_UNLOCK 2   ///< Seat Harness Unlock - aft position
- #define SEAT_UP A2  ///< Seat Up - switch aft
- #define SEAT_DOWN 3   ///< Seat Down - switch forward 
+ #define SEAT_HARNESS_LOCK 3  ///< Seat Harness Lock - forward position
+ #define SEAT_HARNESS_UNLOCK A2   ///< Seat Harness Unlock - aft position
+ #define SEAT_UP 2  ///< Seat Up - switch aft
+ #define SEAT_DOWN A3   ///< Seat Down - switch forward 
  #define EJECT A1  ///< Eject
  #define SEAT_ARM 15  ///< Seat Arm
  #define HARNESS_RELEASE 6   ///< Harness Release

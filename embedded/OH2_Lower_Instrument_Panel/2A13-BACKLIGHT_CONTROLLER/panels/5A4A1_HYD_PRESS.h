@@ -32,15 +32,15 @@
  ********************************************************************************************************************/
 const int HYD_PRESS_LED_COUNT = 42;  // Total number of LEDs in the panel
 const Led hydPressLedTable[HYD_PRESS_LED_COUNT] PROGMEM = {
-    {0, LED_INSTR_BL}, {1, LED_INSTR_BL}, {2, LED_INSTR_BL}, {3, LED_INSTR_BL}, {4, LED_INSTR_BL}, 
-    {5, LED_INSTR_BL}, {6, LED_INSTR_BL}, {7, LED_INSTR_BL}, {8, LED_INSTR_BL}, {9, LED_INSTR_BL},
-    {10, LED_INSTR_BL}, {11, LED_INSTR_BL}, {12, LED_INSTR_BL}, {13, LED_INSTR_BL}, {14, LED_INSTR_BL}, 
-    {15, LED_INSTR_BL}, {16, LED_INSTR_BL}, {17, LED_INSTR_BL}, {18, LED_INSTR_BL}, {19, LED_INSTR_BL},
-    {20, LED_INSTR_BL}, {21, LED_INSTR_BL}, {22, LED_INSTR_BL}, {23, LED_INSTR_BL}, {24, LED_INSTR_BL}, 
-    {25, LED_INSTR_BL}, {26, LED_INSTR_BL}, {27, LED_INSTR_BL}, {28, LED_INSTR_BL}, {29, LED_INSTR_BL},
-    {30, LED_INSTR_BL}, {31, LED_INSTR_BL}, {32, LED_INSTR_BL}, {33, LED_INSTR_BL}, {34, LED_INSTR_BL}, 
-    {35, LED_INSTR_BL}, {36, LED_INSTR_BL}, {37, LED_INSTR_BL}, {38, LED_INSTR_BL}, {39, LED_INSTR_BL},
-    {40, LED_INSTR_BL}, {41, LED_INSTR_BL}
+    {0, LED_5MM_RGB}, {1, LED_5MM_RGB}, {2, LED_5MM_RGB}, {3, LED_5MM_RGB}, {4, LED_5MM_RGB}, 
+    {5, LED_5MM_RGB}, {6, LED_5MM_RGB}, {7, LED_5MM_RGB}, {8, LED_5MM_RGB}, {9, LED_5MM_RGB},
+    {10, LED_5MM_RGB}, {11, LED_5MM_RGB}, {12, LED_5MM_RGB}, {13, LED_5MM_RGB}, {14, LED_5MM_RGB}, 
+    {15, LED_5MM_RGB}, {16, LED_5MM_RGB}, {17, LED_5MM_RGB}, {18, LED_5MM_RGB}, {19, LED_5MM_RGB},
+    {20, LED_5MM_RGB}, {21, LED_5MM_RGB}, {22, LED_5MM_RGB}, {23, LED_5MM_RGB}, {24, LED_5MM_RGB}, 
+    {25, LED_5MM_RGB}, {26, LED_5MM_RGB}, {27, LED_5MM_RGB}, {28, LED_5MM_RGB}, {29, LED_5MM_RGB},
+    {30, LED_5MM_RGB}, {31, LED_5MM_RGB}, {32, LED_5MM_RGB}, {33, LED_5MM_RGB}, {34, LED_5MM_RGB}, 
+    {35, LED_5MM_RGB}, {36, LED_5MM_RGB}, {37, LED_5MM_RGB}, {38, LED_5MM_RGB}, {39, LED_5MM_RGB},
+    {40, LED_5MM_RGB}, {41, LED_5MM_RGB}
 };
 
 /********************************************************************************************************************
