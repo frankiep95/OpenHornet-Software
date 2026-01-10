@@ -331,12 +331,12 @@ void setup() {
     
     LC_2.addPanel<Lc2AllPanels>();
 
-    // RC_1.addPanel<LdgChecklistPanel>();
-    // RC_1.addPanel<RadarAltPanel>();
-    // RC_1.addPanel<HydPressGauge>();
-    // RC_1.addPanel<CautionPanel>();
-    // RC_1.addPanel<Rc1AllRemainingPanels>();
-    // RC_2.addPanel<Rc2AllPanels>();
+    RC_1.addPanel<LdgChecklistPanel>();
+    RC_1.addPanel<RadarAltPanel>();
+    RC_1.addPanel<HydPressGauge>();
+    RC_1.addPanel<CautionPanel>();
+    RC_1.addPanel<Rc1AllRemainingPanels>();
+    RC_2.addPanel<Rc2AllPanels>();
 
     // LC_FLOOD.addPanel<LcFloodLights>();
     // RC_FLOOD.addPanel<RcFloodLights>();
