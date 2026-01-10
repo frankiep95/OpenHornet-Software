@@ -32,7 +32,7 @@
  ********************************************************************************************************************/
 const int RADAR_ALT_LED_COUNT = 2;  // Total number of LEDs in the panel
 const Led radarAltLedTable[RADAR_ALT_LED_COUNT] PROGMEM = {
-    {0, LED_INSTR_BL}, {1, LED_INSTR_BL}
+    {0, LED_5MM_RGB}, {1, LED_5MM_RGB}
 };
 
 /********************************************************************************************************************
