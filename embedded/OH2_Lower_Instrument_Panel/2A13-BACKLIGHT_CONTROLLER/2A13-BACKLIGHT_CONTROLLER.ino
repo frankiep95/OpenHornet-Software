@@ -332,7 +332,7 @@ void setup() {
     LC_2.addPanel<Lc2AllPanels>();
 
     RC_1.addPanel<LdgChecklistPanel>();
-    RC_1.addPanel<RadarAltPanel>();
+    // RC_1.addPanel<RadarAltPanel>();
     // RC_1.addPanel<HydPressGauge>();
     RC_1.addPanel<CautionPanel>();
     RC_1.addPanel<Rc1AllRemainingPanels>();
