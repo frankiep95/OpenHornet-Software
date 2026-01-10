@@ -37,7 +37,7 @@
  * @details "Role" in this context refers to the LED role enum in the Panel.h file (enum used for memory efficiency).
  * @remark  This table is stored in PROGMEM for memory efficiency.
  ********************************************************************************************************************/
-const int RC2_ALL_PANELS_LED_COUNT = 266;  // Total number of LEDs in all panels
+const int RC2_ALL_PANELS_LED_COUNT = 286;  // Total number of LEDs in all panels
 const Led rc2AllPanelsLedTable[RC2_ALL_PANELS_LED_COUNT] PROGMEM = {
     // ECS Panel (62 LEDs)
     {0, LED_CONSOLE_BL}, {1, LED_CONSOLE_BL}, {2, LED_CONSOLE_BL}, {3, LED_CONSOLE_BL}, {4, LED_CONSOLE_BL},
