@@ -338,8 +338,8 @@ void setup() {
     RC_1.addPanel<Rc1AllRemainingPanels>();
     RC_2.addPanel<Rc2AllPanels>();
 
-    // LC_FLOOD.addPanel<LcFloodLights>();
-    // RC_FLOOD.addPanel<RcFloodLights>();
+    LC_FLOOD.addPanel<LcFloodLights>();
+    RC_FLOOD.addPanel<RcFloodLights>();
 
     FastLED.setMaxPowerInVoltsAndMilliamps(VOLTAGE, MAX_MILLIAMPS);   // Set the maximum power in volts and milliamps
     FastLED.setMaxRefreshRate(100);                                   // Set the maximum refresh rate to 100 Hz instead of std. 400 Hz. Slightly reduces CPU load.

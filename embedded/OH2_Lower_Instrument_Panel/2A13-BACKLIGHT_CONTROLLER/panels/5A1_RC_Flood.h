@@ -29,7 +29,7 @@
  * @details "Role" in this context refers to the LED role enum in the Panel.h file (enum used for memory efficiency).
  * @remark  This table is stored in PROGMEM for memory efficiency.
  ********************************************************************************************************************/
-const int RCF_LED_COUNT = 100;  // Total number of LEDs in the panel
+const int RCF_LED_COUNT = 89;  // Total number of LEDs in the panel
 const Led rcFloodLedTable[RCF_LED_COUNT] PROGMEM = {
     {0, LED_FLOOD}, {1, LED_FLOOD}, {2, LED_FLOOD}, {3, LED_FLOOD}, {4, LED_FLOOD}, 
     {5, LED_FLOOD}, {6, LED_FLOOD}, {7, LED_FLOOD}, {8, LED_FLOOD}, {9, LED_FLOOD},
@@ -48,9 +48,7 @@ const Led rcFloodLedTable[RCF_LED_COUNT] PROGMEM = {
     {70, LED_FLOOD}, {71, LED_FLOOD}, {72, LED_FLOOD}, {73, LED_FLOOD}, {74, LED_FLOOD}, 
     {75, LED_FLOOD}, {76, LED_FLOOD}, {77, LED_FLOOD}, {78, LED_FLOOD}, {79, LED_FLOOD},
     {80, LED_FLOOD}, {81, LED_FLOOD}, {82, LED_FLOOD}, {83, LED_FLOOD}, {84, LED_FLOOD}, 
-    {85, LED_FLOOD}, {86, LED_FLOOD}, {87, LED_FLOOD}, {88, LED_FLOOD}, {89, LED_FLOOD},
-    {90, LED_FLOOD}, {91, LED_FLOOD}, {92, LED_FLOOD}, {93, LED_FLOOD}, {94, LED_FLOOD}, 
-    {95, LED_FLOOD}, {96, LED_FLOOD}, {97, LED_FLOOD}, {98, LED_FLOOD}, {99, LED_FLOOD}
+    {85, LED_FLOOD}, {86, LED_FLOOD}, {87, LED_FLOOD}, {88, LED_FLOOD}
 };
 
 /********************************************************************************************************************
