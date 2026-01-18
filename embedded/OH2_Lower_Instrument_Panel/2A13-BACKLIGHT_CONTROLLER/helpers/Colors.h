@@ -34,5 +34,6 @@
 #define NVIS_GREEN_B CRGB(25, 155, 0)                                 // Green indicators (Mil-Spec: 85, 138, 0)
 #define NVIS_WHITE   CRGB(40, 40, 30)                                 // Dimmed white, e.g. for Jett Station Select toggle light
 #define NVIS_BLACK   CRGB(0, 0, 0)                                    // No colour / OFF
+#define NVIS_FLOOD   CRGB(60, 40, 0)                                 // Incandescent floodlight color
 
 #endif // COLORS_H 

@@ -172,15 +172,21 @@ protected:
      * @param newValue The new brightness value (0-65535)
      * @see This method is called by derived panel classes to update floodlights
      */
-    void setFloodlights(uint16_t newValue) {                          // Set the brightness of LEDs with role LED_FLOOD
+    void setFloodlights(uint16_t newValue,bool NVG) {                          // Set the brightness of LEDs with role LED_FLOOD
         if (!getLedStrip() || !getLedTable()) return;                 // Same structure as setBacklights()
         if (newValue == current_flood_brightness) return;             
         current_flood_brightness = newValue;
         
         uint8_t scale = map(newValue, 0, 65535, 0, 255);
-        
-        CRGB target = NVIS_WHITE;
-        target.nscale8_video(scale);
+        CRGB target;
+        if(NVG){
+            target = NVIS_GREEN_A;
+            target.nscale8_video(80);
+        }
+        else if(!NVG){
+            target = NVIS_FLOOD;
+            target.nscale8_video(scale);
+        }
         
         int n = getLedCount();
         for (int i = 0; i < n; i++) {                                 

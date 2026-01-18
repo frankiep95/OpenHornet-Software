@@ -6,6 +6,8 @@
                 "${workspaceFolder}/**",
                 "${env:HOME}/Library/Arduino15/packages/**",
                 "${env:HOME}/Documents/Arduino/libraries/**",
+                "C:/Users/fpere/OneDrive/Desktop/Open Hornet Software/DCS-BIOS/src/",
+                "C:/Users/fpere/OneDrive/Documents/Arduino/libraries/**"
             ],
             "defines": [],
             "macFrameworkPath": [

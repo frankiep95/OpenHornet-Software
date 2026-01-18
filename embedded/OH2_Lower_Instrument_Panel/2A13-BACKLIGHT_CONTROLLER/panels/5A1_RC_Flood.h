@@ -97,9 +97,16 @@ private:
      * @see This method is called by DCS-BIOS when the FLOOD DIMMER state changes
      */
     static void onFloodDimmerChange(unsigned int newValue) {
-        if (instance) instance->setFloodlights(newValue);
+        if (instance) instance->setFloodlights(newValue, 0);
     }
     DcsBios::IntegerBuffer floodDimmerBuffer{FA_18C_hornet_FLOOD_DIMMER, onFloodDimmerChange};
+
+    static void onCockkpitLightModeSwChange(unsigned int newValue) {
+        if(newValue == 2){
+            if (instance) instance->setFloodlights(newValue,1);
+        }
+    }
+    DcsBios::IntegerBuffer cockkpitLightModeSwBuffer(FA_18C_hornet_COCKKPIT_LIGHT_MODE_SW, onCockkpitLightModeSwChange);
 
     // Instance data
     static RcFloodLights* instance;
