@@ -111,11 +111,15 @@ private:
     static void onCockkpitLightModeSwChange(unsigned int newValue) {
         if(newValue == 2){
             instance->NVG_mode = true;
-            if (instance) instance->setFloodlights(250,1);
+            if (instance){
+                instance->setFloodlights(250,1);
+                instance->setConsoleLights(0);
+            }           
         }
         if(newValue != 2){
             instance->NVG_mode = false;
             if (instance) instance->setFloodlights(instance->lightValue,0);
+            if (instance) instance->setConsoleLights(instance->current_console_brightness);
         }
     }
     DcsBios::IntegerBuffer cockkpitLightModeSwBuffer{FA_18C_hornet_COCKKPIT_LIGHT_MODE_SW, onCockkpitLightModeSwChange};
