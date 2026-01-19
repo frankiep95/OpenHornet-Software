@@ -76,6 +76,9 @@ public:
         return instance;
     }
 
+
+
+
 private:
     /**
      * @brief Private constructor to enforce singleton pattern
@@ -96,14 +99,23 @@ private:
      * @param newValue The new state of the indicator (0-100)
      * @see This method is called by DCS-BIOS when the FLOOD DIMMER state changes
      */
+
+     bool NVG_mode = false;
+     unsigned int lightValue = 0;
     static void onFloodDimmerChange(unsigned int newValue) {
-        if (instance) instance->setFloodlights(newValue, 0);
+            if (instance && !instance->NVG_mode) instance->setFloodlights(newValue, 0);
+            instance->lightValue = newValue;
     }
     DcsBios::IntegerBuffer floodDimmerBuffer{FA_18C_hornet_FLOOD_DIMMER, onFloodDimmerChange};
 
     static void onCockkpitLightModeSwChange(unsigned int newValue) {
         if(newValue == 2){
-            if (instance) instance->setFloodlights(newValue,1);
+            instance->NVG_mode = true;
+            if (instance) instance->setFloodlights(250,1);
+        }
+        if(newValue != 2){
+            instance->NVG_mode = false;
+            if (instance) instance->setFloodlights(instance->lightValue,0);
         }
     }
     DcsBios::IntegerBuffer cockkpitLightModeSwBuffer{FA_18C_hornet_COCKKPIT_LIGHT_MODE_SW, onCockkpitLightModeSwChange};

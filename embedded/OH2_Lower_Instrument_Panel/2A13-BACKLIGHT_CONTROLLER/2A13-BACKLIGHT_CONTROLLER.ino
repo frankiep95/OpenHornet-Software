@@ -240,10 +240,10 @@ const int UIP_1_LED_COUNT = 191;
 // const int UIP_2_LED_COUNT = 210;
 const int LC_1_LED_COUNT = 230;
 const int LC_2_LED_COUNT = 208;
-const int RC_1_LED_COUNT = 129;
+const int RC_1_LED_COUNT = 171;
 const int RC_2_LED_COUNT = 286;
-const int LC_FLOOD_LED_COUNT = 100;
-const int RC_FLOOD_LED_COUNT = 100;
+const int LC_FLOOD_LED_COUNT = 89;
+const int RC_FLOOD_LED_COUNT = 89;
 
 // Static LED arrays for each channel, using the LED counts defined abv
 CRGB LIP_1_leds[LIP_1_LED_COUNT];    
@@ -333,7 +333,7 @@ void setup() {
 
     RC_1.addPanel<LdgChecklistPanel>();
     // RC_1.addPanel<RadarAltPanel>();
-    // RC_1.addPanel<HydPressGauge>();
+    RC_1.addPanel<HydPressGauge>();
     RC_1.addPanel<CautionPanel>();
     RC_1.addPanel<Rc1AllRemainingPanels>();
     RC_2.addPanel<Rc2AllPanels>();

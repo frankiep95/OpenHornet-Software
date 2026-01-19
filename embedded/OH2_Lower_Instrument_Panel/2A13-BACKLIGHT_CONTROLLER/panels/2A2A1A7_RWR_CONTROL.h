@@ -37,12 +37,12 @@
 const int RWR_CONTROL_LED_COUNT = 33;  // Total number of LEDs in the panel
 const Led rwrControlLedTable[RWR_CONTROL_LED_COUNT] PROGMEM = {
     {0, LED_INSTR_BL}, {1, LED_INSTR_BL}, {2, LED_INSTR_BL}, {3, LED_INSTR_BL},
-    {4, LED_INSTR_BL}, {5, LED_INSTR_BL}, {6, LED_RWR_BIT}, {7, LED_RWR_BIT_FAIL},
-    {8, LED_RWR_BIT_FAIL}, {9, LED_RWR_BIT}, {10, LED_RWR_OFFSET}, {11, LED_RWR_OFFSET_EN},
-    {12, LED_RWR_OFFSET_EN}, {13, LED_RWR_OFFSET}, {14, LED_RWR_SPECIAL}, {15, LED_RWR_SPECIAL_EN},
-    {16, LED_RWR_SPECIAL_EN}, {17, LED_RWR_SPECIAL}, {18, LED_RWR_DISPLAY}, {19, LED_RWR_LIMIT},
-    {20, LED_RWR_LIMIT}, {21, LED_RWR_DISPLAY}, {22, LED_RWR_POWER}, {23, LED_RWR_POWER},
-    {24, LED_RWR_NONE}, {25, LED_RWR_NONE}, {26, LED_INSTR_BL}, {27, LED_INSTR_BL},
+    {4, LED_INSTR_BL}, {5, LED_INSTR_BL}, {6, LED_INSTR_BL}, {7, LED_RWR_BIT},
+    {8, LED_RWR_BIT_FAIL}, {9, LED_RWR_BIT_FAIL}, {10, LED_RWR_BIT}, {11, LED_RWR_OFFSET},
+    {12, LED_RWR_OFFSET_EN}, {13, LED_RWR_OFFSET_EN}, {14, LED_RWR_OFFSET}, {15, LED_RWR_SPECIAL},
+    {16, LED_RWR_SPECIAL_EN}, {17, LED_RWR_SPECIAL_EN}, {18, LED_RWR_SPECIAL}, {19, LED_RWR_DISPLAY},
+    {20, LED_RWR_LIMIT}, {21, LED_RWR_LIMIT}, {22, LED_RWR_DISPLAY}, {23, LED_RWR_POWER},
+    {24, LED_RWR_NONE}, {25, LED_RWR_NONE}, {26, LED_RWR_POWER}, {27, LED_INSTR_BL},
     {28, LED_INSTR_BL}, {29, LED_INSTR_BL}, {30, LED_INSTR_BL}, {31, LED_INSTR_BL}, {32, LED_INSTR_BL}
 };
 
@@ -121,7 +121,7 @@ private:
             setIndicatorColor(LED_RWR_POWER, NVIS_GREEN_A);
             // RWR BIT and RWR BIT FAIL
             if (rwrFailActive) {
-                setIndicatorColor(LED_RWR_BIT, NVIS_RED);
+                setIndicatorColor(LED_RWR_BIT, NVIS_GREEN_A);
                 setIndicatorColor(LED_RWR_BIT_FAIL, NVIS_RED);
             } else {
                 setIndicatorColor(LED_RWR_BIT, NVIS_GREEN_A);
