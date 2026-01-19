@@ -124,8 +124,8 @@ private:
                 setIndicatorColor(LED_RWR_BIT, NVIS_RED);
                 setIndicatorColor(LED_RWR_BIT_FAIL, NVIS_RED);
             } else {
-                setIndicatorColor(LED_RWR_BIT, NVIS_WHITE);
-                setIndicatorColor(LED_RWR_BIT_FAIL, NVIS_WHITE);
+                setIndicatorColor(LED_RWR_BIT, NVIS_GREEN_A);
+                setIndicatorColor(LED_RWR_BIT_FAIL, NVIS_BLACK);
             }
 
             // RWR OFFSET and RWR OFFSET EN
@@ -133,8 +133,8 @@ private:
                 setIndicatorColor(LED_RWR_OFFSET, NVIS_GREEN_A);
                 setIndicatorColor(LED_RWR_OFFSET_EN, NVIS_GREEN_A);
             } else {
-                setIndicatorColor(LED_RWR_OFFSET, NVIS_WHITE);
-                setIndicatorColor(LED_RWR_OFFSET_EN, NVIS_WHITE);
+                setIndicatorColor(LED_RWR_OFFSET, NVIS_GREEN_A);
+                setIndicatorColor(LED_RWR_OFFSET_EN, NVIS_BLACK);
             }
 
             // RWR SPECIAL and RWR SPECIAL EN
@@ -142,8 +142,8 @@ private:
                 setIndicatorColor(LED_RWR_SPECIAL, NVIS_GREEN_A);
                 setIndicatorColor(LED_RWR_SPECIAL_EN, NVIS_GREEN_A);
             } else {
-                setIndicatorColor(LED_RWR_SPECIAL, NVIS_WHITE);
-                setIndicatorColor(LED_RWR_SPECIAL_EN, NVIS_WHITE);
+                setIndicatorColor(LED_RWR_SPECIAL, NVIS_GREEN_A);
+                setIndicatorColor(LED_RWR_SPECIAL_EN, NVIS_BLACK);
             }
 
             // RWR LIMIT DISPLAY 
@@ -151,8 +151,8 @@ private:
                 setIndicatorColor(LED_RWR_DISPLAY, NVIS_GREEN_A);
                 setIndicatorColor(LED_RWR_LIMIT, NVIS_GREEN_A);
             } else {
-                setIndicatorColor(LED_RWR_DISPLAY, NVIS_WHITE);
-                setIndicatorColor(LED_RWR_LIMIT, NVIS_WHITE);
+                setIndicatorColor(LED_RWR_DISPLAY, NVIS_GREEN_A);
+                setIndicatorColor(LED_RWR_LIMIT, NVIS_BLACK);
             }
         }
     }

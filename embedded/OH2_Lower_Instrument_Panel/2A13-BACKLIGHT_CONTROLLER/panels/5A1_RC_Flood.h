@@ -106,7 +106,7 @@ private:
             if (instance) instance->setFloodlights(newValue,1);
         }
     }
-    DcsBios::IntegerBuffer cockkpitLightModeSwBuffer(FA_18C_hornet_COCKKPIT_LIGHT_MODE_SW, onCockkpitLightModeSwChange);
+    DcsBios::IntegerBuffer cockkpitLightModeSwBuffer{FA_18C_hornet_COCKKPIT_LIGHT_MODE_SW, onCockkpitLightModeSwChange};
 
     // Instance data
     static RcFloodLights* instance;
