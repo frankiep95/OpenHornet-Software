@@ -241,7 +241,7 @@ const int UIP_1_LED_COUNT = 191;
 const int LC_1_LED_COUNT = 230;
 const int LC_2_LED_COUNT = 208;
 const int RC_1_LED_COUNT = 171;
-const int RC_2_LED_COUNT = 286;
+const int RC_2_LED_COUNT = 344;
 const int LC_FLOOD_LED_COUNT = 89;
 const int RC_FLOOD_LED_COUNT = 89;
 
